@@ -1,0 +1,15 @@
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    color: var(--primary-color);
+}
+
+.mainContent h1 {
+    font-size: 3rem;
+}
+
+.mainContent h2 {
+    font-size: 1.25rem;
+    line-height: 25.6px;
+}

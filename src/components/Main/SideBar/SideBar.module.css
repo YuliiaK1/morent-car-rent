@@ -1,0 +1,85 @@
+.sideBar {
+    height: 100vh;
+    position: absolute;
+    width: 21.68%;
+    top: 106px;
+    z-index: 1;
+    background-color: var(--second-color);
+    transition: all 0.5s ease;
+}
+
+.sideSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 32px;
+    font-weight: 600;
+    color: var(--txt-sd-bar);
+}
+
+.typeFilter, .capacityFilter, .priceFilter{
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionName {
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: var(--txt-sp-color);
+    margin-bottom: 12px;
+}
+
+.btnSideBar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.btnSideBar button {
+    border: none;
+    border-radius: 4px;
+    background-color: var(--third-color);
+    padding: 5px 15px;
+    font-family: 'Plus Jakarta Sans';
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 16px;
+    color: var(--second-color);
+    cursor: pointer;
+}
+
+
+@media (max-width:768px) {
+    .sideBar {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background-color: rgba(0,0,0,0.4);
+    }
+
+    .sideSection {
+        font-size: 0.75rem;
+        width: 50%;
+        background-color: var(--second-color);
+    }
+
+}
+
+@media (max-width:650px) {
+    .sideBar {
+        top: 98px;
+    }
+
+}
+@media (max-width:475px) {
+    .sideBar {
+        top: 180px;
+    }
+
+    .sideSection {
+        width: 80%;
+    }
+
+}
