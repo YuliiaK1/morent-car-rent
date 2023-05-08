@@ -28,7 +28,7 @@ const { name, image, price } = card;
             <p className={style.type}>{card.type}</p>
             <div className={style.content}>
                 <div className={style.image}>
-                    <img src={card.image} alt={card.name} />
+                    <img src={require("../../../assets"+card.image)} alt={card.name} />
                 </div>
                 <div className={style.featureBlock}>
                     <div className={style.feature}>
