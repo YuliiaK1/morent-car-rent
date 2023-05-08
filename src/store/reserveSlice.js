@@ -11,7 +11,6 @@ const reserveSlice = createSlice ({
     },
     reducers: {
         addToReserve: (state, action) => {
-            console.log(action);
             state.reserveList = action.payload;
         }
     }

@@ -239,7 +239,7 @@ export default function Reserve(){
                     <h1>Rental Summary</h1>
                     <p>Prices may change depending on the length of the rental and the price of your rental car.</p>
                     <h2>{reserve.name? reserve.name : 'Car not chosen'}</h2>
-                    {reserve.image?  <img src={reserve.image} alt="Car for rent" /> : <div className={style.emptyImg}></div>}
+                    {reserve.image?  <img src={require("../../assets"+reserve.image)} alt="Car for rent" /> : <div className={style.emptyImg}></div>}
                         <div className={style.allsubtotal}>
                             <div className={style.subtotal}>
                                 <span>Subtotal</span>
