@@ -1,6 +1,6 @@
 let MongoClient = require('mongodb').MongoClient;
 
-const URL = "mongodb://localhost:27017/carsbox";
+const URL = "mongodb+srv://svistaky:47buhili@cluster0.pvylfxu.mongodb.net/carsbox?retryWrites=true&w=majority";
 
 let dbConnection;
 
