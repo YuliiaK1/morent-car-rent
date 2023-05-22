@@ -1,0 +1,11 @@
+.cardsSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #90A3BF;
+    margin: 32px 0 10px;
+}
