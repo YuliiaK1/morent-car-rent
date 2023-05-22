@@ -1,10 +1,11 @@
 const express = require("express");
 const cors = require("cors");
+require('dotenv').config();
 const MongoClient = require("mongodb").MongoClient;
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-const URL = "mongodb+srv://svistaky:47buhili@cluster0.pvylfxu.mongodb.net/carsbox?retryWrites=true&w=majority";
+const URL = process.env.URL;
 
 let db;
 
