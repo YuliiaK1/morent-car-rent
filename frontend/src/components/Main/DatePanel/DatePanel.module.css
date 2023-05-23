@@ -30,4 +30,8 @@
     .datePanel {
         flex-direction: column;
     }
+
+    .btnPanel { 
+        margin: 10px;
+    }
 }
