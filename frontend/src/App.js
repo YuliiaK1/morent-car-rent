@@ -6,7 +6,7 @@ import MainPage from "./components/Main/MainPage";
 function App() {
   const [data, setData] = useState();
   useEffect(()=>{
-    fetch("https://morent-car-rent.onrender.com/cars")
+    fetch("http://localhost:3001/cars")
     .then((response) => response.json())
     .then(response=>setData(response))
     .catch((error) => {
