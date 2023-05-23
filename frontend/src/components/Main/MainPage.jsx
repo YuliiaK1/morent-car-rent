@@ -41,6 +41,7 @@ function MainPage({data}) {
     isOpen, setIsOpen,
     reserveOpen, setReserveOpen,
     list, setList,
+    data,
     searchField, setSearchField,
     pickUpForm, setPickUpForm,
     dropForm, setDropForm,
