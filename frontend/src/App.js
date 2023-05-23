@@ -6,7 +6,7 @@ import MainPage from "./components/Main/MainPage";
 function App() {
   const [data, setData] = useState();
   useEffect(()=>{
-    fetch("http://localhost:3001/cars")
+    fetch("https://morent-car-rent.netlify.app/cars")
     .then((response) => response.json())
     .then(response=>setData(response))
     .catch((error) => {
