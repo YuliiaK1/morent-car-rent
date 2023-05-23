@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-const path = require("path");
 require('dotenv').config();
 const MongoClient = require("mongodb").MongoClient;
 
@@ -27,11 +26,6 @@ MongoClient.connect(URL, { useUnifiedTopology: true })
   })
   .catch((err) => {
     console.log(`DB connection error: ${err}`);
-  });
-
-app.use(express.static(path.join(__dirname, "../frontend/public")));
-app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../frontend/public", "index.html"));
   });
 
 app.get("/cars", (req, res) => {
