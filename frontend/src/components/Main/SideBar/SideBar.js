@@ -64,6 +64,15 @@ useEffect(() => {
   applyFilters();
 }, [carsType, carsRoominess, applyFilters]);
 
+const handleClear = () => {
+  // Clear all checked values for carsType
+  const clearedCarsType = carsType.map(car => ({ ...car, checked: false }));
+  setCarsType(clearedCarsType);
+  // Clear all checked values for carsRoominess
+  const clearedCarsRoominess = carsRoominess.map(car => ({ ...car, checked: false }));
+  setCarsRoominess(clearedCarsRoominess);
+  setSelectedPrice([50, 100]);
+};
     return (
         <div className={style.sideBar} ref={refs}>
         <div className={style.sideSection}>
@@ -95,7 +104,7 @@ useEffect(() => {
           </div>
 
           {isMaxSidebar && <div className={style.btnSideBar}>
-            <button>Clear</button>
+            <button onClick={handleClear}>Clear</button>
             <button onClick={()=>setIsOpen(!isOpen)}>Apply</button>
           </div>}
         </div>
