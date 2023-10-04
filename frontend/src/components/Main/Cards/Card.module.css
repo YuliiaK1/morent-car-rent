@@ -88,6 +88,21 @@
     cursor: pointer;
 }
 
+
+@media (max-width:475px) and (min-width: 375px) {
+    .featureBlock {
+        flex-direction: column;
+        gap: 16px;
+        font-size: 0.75rem;
+        max-width: 113px;
+        width: 100%;
+    }
+
+    .image {
+        width: 260px;
+    }
+}
+
 @media (max-width:475px) and (min-width: 320px) {
     .cardBlock {
         padding: 16px;
