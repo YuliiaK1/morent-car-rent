@@ -47,7 +47,7 @@ export default function UserPanel(){
                     <p>Account</p>
                     </HashLink>}
                 </div>}
-                <img src={userPhoto} className={style.imgAccount} alt="User account"/>
+                <Link to={"/login"}  style={{textDecoration: 'none'}}><img src={userPhoto} className={style.imgAccount} alt="User account"/></Link>
         </div>
     )
 }
